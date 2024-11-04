@@ -1,6 +1,7 @@
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use uuid::Uuid;
+use nostr::prelude::*;
 use std::sync::{Arc, Mutex};
 use std::error::Error;
 
