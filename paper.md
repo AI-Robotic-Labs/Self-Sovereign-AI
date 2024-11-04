@@ -81,7 +81,7 @@ Self-Sovereign AI represents a transformative approach to artificial intelligenc
 #### **References**
 - **W3C DID Specification**: Decentralized Identifiers for cross-network identity management.
 - **Federated Learning**: Enabling AI to learn collaboratively while preserving privacy.
-- **IPFS, Arweave, Apache Cassandra**: Decentralized storage solutions for resilient, distributed data management.
+- **IPFS, Apache Cassandra**: Decentralized storage solutions for resilient, distributed data management.
 - **libp2p, WebRTC**: Peer-to-peer networking protocols for direct communication.
 - **Kubernetes, Apache Mesos**: Distributed resource management frameworks for scalable and autonomous operations.
 - **Homomorphic Encryption, Secure Multiparty Computation (MPC), Differential Privacy**: Privacy-preserving technologies for secure data processing.
