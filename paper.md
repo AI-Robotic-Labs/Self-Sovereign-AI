@@ -17,7 +17,7 @@ Self-Sovereign AI utilizes decentralized storage solutions such as the InterPlan
 ##### **2.2 Decentralized Identity and Access Control**
 To maintain a consistent and verifiable identity across decentralized networks, Self-Sovereign AI employs decentralized identity frameworks such as Decentralized Identifiers (DIDs) based on the W3C DID specification. These identifiers are managed by the AI using cryptographic keys, enabling secure authentication, request signing, and identity verification across various platforms and services without relying on a central authority. Identity management protocols ensure that the AI can interact with other systems and users securely while preserving its autonomy.
 
-It is possible also use Nostr and PubKy to allowing more decentralization using others networks inside Web.
+It is possible also use Nostr and PubKy to allowing more decentralization inside Web.
 
 ##### **2.3 Federated and Reinforcement Learning for Autonomy**
 Instead of centralized data aggregation, federated learning allows Self-Sovereign AI to train its models across distributed data sources, enhancing privacy and adaptability. By processing data locally and sharing only model updates, the AI minimizes data exposure and leverages diverse datasets to improve performance. Reinforcement learning (RL) further enhances the AI’s autonomy by enabling it to learn optimal decision-making policies through continuous interaction with its environment. These learning paradigms empower the AI to evolve and adapt in real-time without centralized oversight.
