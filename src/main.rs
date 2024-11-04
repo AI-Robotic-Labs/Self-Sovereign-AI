@@ -26,6 +26,25 @@ impl DID {
     }
 }
 
+// Nostr structure
+
+struct Nostr {
+    relay: String,
+    npub: String,
+}
+    
+impl Nostr {
+    fn new() -> Self {
+        Self {
+            relay: format!("relay.damus.io"),
+            npub: Npub::new().to_string(),
+        }
+    }
+    fn display_nostr(&self)
+        println!("relay: {}", self.relay;
+        println!("Npub: {}", self.npub);
+                 }
+                 }
 // AI Agent with a unique DID and local storage
 #[derive(Debug)]
 struct AIAgent {
