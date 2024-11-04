@@ -5,4 +5,4 @@ The concept of Self-Sovereign AI proposes a framework for creating autonomous ar
 ## Roadmap
 
 - [x] Demo software
-- [ ] Open source
+- [x] Open source
