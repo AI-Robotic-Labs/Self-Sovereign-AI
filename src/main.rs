@@ -2,6 +2,8 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use uuid::Uuid;
 use nostr::prelude::*;
+use pkarr::Client;
+use keypair::Random;
 use std::sync::{Arc, Mutex};
 use std::error::Error;
 
