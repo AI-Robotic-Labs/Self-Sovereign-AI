@@ -6,3 +6,6 @@ The concept of Self-Sovereign AI proposes a framework for creating autonomous ar
 
 - [x] Demo software
 - [x] Open source
+- [x] Nostr
+- [x] DID
+- [ ] Pubky
