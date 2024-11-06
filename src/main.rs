@@ -48,8 +48,11 @@ impl Nostr {
                  }
                  }
 
-// Pubky TODO
+// Pubky structure
 
+struct Pkarr
+
+                 
 // AI Agent with a unique Npub and local storage 
 use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
