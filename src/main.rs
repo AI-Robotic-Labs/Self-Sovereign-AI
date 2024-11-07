@@ -41,19 +41,22 @@ impl Nostr {
     } // Close the method here
 } // Close the `impl Nostr` block here
 
-    fn display_nostr(&self)
-        println!("relay: {}", self.relay;
+    fn display_nostr(&self) {
+        println!("relay: {}", self.relay);
         println!("Npub: {}", self.npub);
-                 }
-                 }
+    }
 
 // Pubky structure
-
 struct Pkarr
 
                  
 // AI Agent with a unique Npub and local storage 
+
 use std::collections::HashMap;
+
+struct Pkarr {
+    // Add fields here
+}
 use std::sync::{Arc, Mutex};
 use std::error::Error;
 use serde_json::json;
@@ -63,7 +66,8 @@ use tokio;
 #[derive(Debug)]
 struct AIAgent {
     npub: String, // Npub (nostr public key) instead of DID
-    local_storage: Arc<Mutex<HashMap<String, String>>>, // Simulated local storage
+    local_storage: Arc<Mutex<HashMap<String, String>>>,
+    did: DID, // Simulated local storage
 }
 
 impl AIAgent {
@@ -152,6 +156,7 @@ impl AIAgent {
         Self {
             did: DID::new(),
             local_storage: Arc::new(Mutex::new(HashMap::new())),
+            npub: todo!(),
         }
     }
 
