@@ -34,14 +34,13 @@ struct Nostr {
     relay: String,
     npub: String,
 }
-    
 impl Nostr {
-    fn new() -> Self {
-        Self {
-            relay: format!("relay.damus.io"),
-            npub: Npub::new().to_string(),
-        }
-    }
+    fn print_details(&self) {
+        println!("relay: {}", self.relay);
+        println!("Npub: {}", self.npub);
+    } // Close the method here
+} // Close the `impl Nostr` block here
+
     fn display_nostr(&self)
         println!("relay: {}", self.relay;
         println!("Npub: {}", self.npub);
