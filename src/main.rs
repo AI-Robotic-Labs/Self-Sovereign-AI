@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use uuid::Uuid;
 use nostr::prelude::*;
-use pkarr::Client;
+use pkarr::client::Client;
 use pkarr::keypair::Random;
 use std::sync::{Arc, Mutex};
 use std::error::Error;
@@ -47,22 +47,10 @@ impl Nostr {
     }
 
 // Pubky structure
-struct Pkarr
-
-                 
-// AI Agent with a unique Npub and local storage 
-
-use std::collections::HashMap;
-
 struct Pkarr {
-    // Add fields here
+    public_key: String,
+    private_key: String,
 }
-use std::sync::{Arc, Mutex};
-use std::error::Error;
-use serde_json::json;
-use reqwest;
-use tokio;
-
 #[derive(Debug)]
 struct AIAgent {
     npub: String, // Npub (nostr public key) instead of DID
@@ -77,6 +65,7 @@ impl AIAgent {
         Self {
             npub,
             local_storage: Arc::new(Mutex::new(HashMap::new())),
+            did: DID::new(),
         }
     }
 
