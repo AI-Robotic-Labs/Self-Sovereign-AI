@@ -9,3 +9,4 @@ The concept of Self-Sovereign AI proposes a framework for creating autonomous ar
 - [x] Nostr
 - [x] DID
 - [x] Pubky (WIP)
+- [ ] DHT
