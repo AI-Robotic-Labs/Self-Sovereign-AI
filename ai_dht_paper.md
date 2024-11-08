@@ -114,7 +114,7 @@ In a decentralized hospital network, each node could represent a hospital that:
 
 This setup can be expanded by:
 - **Adding Privacy-Preserving Computation**: Using techniques like homomorphic encryption to ensure computations can be done on encrypted data without revealing patient details.
-- **Integration with Decentralized Identity (DID)**: Implementing DIDs to verify the identity of each hospital node in the network, ensuring only verified entities access the DHT.
+- **Integration with Identity**: Implementing DIDs or compatible with Nostr, Pubky to verify the identity of each hospital node in the network, ensuring only verified entities access the DHT.
 - **Federated Learning**: Integrate a federated learning pipeline where each hospital trains local models on patient data, sharing only model updates to improve a global model without exposing raw data.
 
 This framework offers a foundation for a decentralized healthcare application that can maintain patient privacy, improve data availability across hospitals, and enable collaborative insights.
