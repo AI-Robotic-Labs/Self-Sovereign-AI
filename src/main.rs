@@ -3,7 +3,8 @@ use std::collections::HashMap;
 use uuid::Uuid;
 use nostr::prelude::*;
 use pkarr::client::Client;
-use pkarr::keypair::Random;
+use nostr::TagKind::Client;
+use pkarr::Random;
 use std::sync::{Arc, Mutex};
 use std::error::Error;
 
