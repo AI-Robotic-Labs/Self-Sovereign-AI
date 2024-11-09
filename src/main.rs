@@ -4,8 +4,7 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use uuid::Uuid;
 use nostr::prelude::*;
-use pkarr::prelude::*;
-
+use pkarr::PkarrClient;
 // Decentralized Identity (DID) structure
 #[derive(Debug, Serialize, Deserialize)]
 struct DID {
