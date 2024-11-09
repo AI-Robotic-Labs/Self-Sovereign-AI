@@ -1,12 +1,10 @@
+use std::sync::{Arc, Mutex};
+use std::error::Error;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use uuid::Uuid;
 use nostr::prelude::*;
-use pkarr::client::Client;
-use nostr::TagKind::Client;
-use pkarr::Random;
-use std::sync::{Arc, Mutex};
-use std::error::Error;
+use pkarr::prelude::*;
 
 // Decentralized Identity (DID) structure
 #[derive(Debug, Serialize, Deserialize)]
