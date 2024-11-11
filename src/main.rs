@@ -133,8 +133,8 @@ async fn main() {
                  
 // AI Agent with a unique DID and local storage
 #[derive(Debug)]
-struct AIAgent {
-    did: DID,
+struct AIAgent2 {
+    npub: String,
     local_storage: Arc<Mutex<HashMap<String, String>>>, // Simulated local storage
 }
 
