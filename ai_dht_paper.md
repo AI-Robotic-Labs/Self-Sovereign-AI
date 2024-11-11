@@ -1,5 +1,7 @@
 ### **Purpose of DHT in Self-Sovereign AI**
 
+Author: Rsync25
+
 1. **Data Discovery**: The DHT allows AI agents to locate and retrieve data across a distributed network without centralized control.
 2. **Decentralized Storage**: Patient data can be distributed across hospital nodes securely, ensuring data redundancy and availability without a central server.
 3. **Efficient Communication**: AI agents can identify which nodes hold specific datasets, reducing the need for extensive queries.
