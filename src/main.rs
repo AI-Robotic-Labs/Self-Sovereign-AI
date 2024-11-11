@@ -141,9 +141,8 @@ struct AIAgent {
 impl AIAgent {
     fn new() -> Self {
         Self {
-            did: DID::new(),
+            npub: generate_npub(),
             local_storage: Arc::new(Mutex::new(HashMap::new())),
-            npub: todo!(),
         }
     }
 
