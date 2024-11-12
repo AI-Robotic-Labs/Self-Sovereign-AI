@@ -10,3 +10,7 @@ The concept of Self-Sovereign AI proposes a framework for creating autonomous ar
 - [x] DID
 - [x] Pubky (WIP)
 - [x] DHT
+
+## Warming ⚠️
+
+This project doesn't have no one token. If you find, plese report.
