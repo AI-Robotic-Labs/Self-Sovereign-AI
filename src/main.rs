@@ -12,6 +12,7 @@ struct DID {
 }
 
 impl DID {
+    #[allow(dead_code)]
     fn new() -> Self {
         Self {
             id: format!("did:example:{}", Uuid::new_v4()),
@@ -19,6 +20,7 @@ impl DID {
         }
     }
 
+    #[allow(dead_code)]
     fn display_did(&self) {
         println!("DID: {}", self.id);
         println!("Public Key: {}\n", self.public_key);
@@ -27,6 +29,7 @@ impl DID {
 
 // Nostr structure
 
+#[allow(dead_code)]
 struct Nostr {
     relay: String,
     npub: String,
