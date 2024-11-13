@@ -35,12 +35,14 @@ struct Nostr {
     npub: String,
 }
 impl Nostr {
+    #[allow(dead_code)]
     fn print_details(&self) {
         println!("relay: {}", self.relay);
         println!("Npub: {}", self.npub);
     } // Close the method here
 } // Close the `impl Nostr` block here
 
+     #[allow(dead_code)]
     impl Nostr {
         fn display_nostr(&self) {
             println!("relay: {}", self.relay);
@@ -48,11 +50,12 @@ impl Nostr {
         }
     }
 // Pubky structure
+#[allow(dead_code)]
 struct Pkarr {
     public_key: String,
     private_key: String,
 }
-#[derive(Debug)]
+#[allow(dead_code)]
 struct AIAgent {
     npub: String, // Npub (nostr public key) instead of DID
     local_storage: Arc<Mutex<HashMap<String, String>>>,
@@ -61,6 +64,7 @@ struct AIAgent {
 
 impl AIAgent {
     // Initialize a new AI agent with a unique npub
+    #[allow(dead_code)]
     fn aiagent () -> Self {
         let npub = Self::generate_npub();
         Self {
@@ -71,17 +75,20 @@ impl AIAgent {
     }
 
     // Method to generate a Npub (this would normally use the nostr library to generate keys)
+    #[allow(dead_code)]
     fn generate_npub() -> String {
         // Simulated npub generation (replace with actual Nostr public key generation)
         "npub1examplepubkey".to_string() // Placeholder npub
     }
 
     // Display npub for debugging
+    #[allow(dead_code)]
     fn display_npub(&self) {
         println!("Agent Npub: {}", self.npub);
     }
 
     // Store data securely in local storage
+    #[allow(dead_code)]
     fn store (&self, key: String, value: String) {
         let mut storage = self.local_storage.lock().unwrap();
         storage.insert(key.clone(), value.clone());
@@ -89,11 +96,12 @@ impl AIAgent {
     }
 
     // Retrieve data from local storage
+    #[allow(dead_code)]
     fn retrieve(&self, key: &str) -> Option<String> {
         let storage = self.local_storage.lock().unwrap();
         storage.get(key).cloned()
     }
-
+   #[allow(dead_code)]
     async fn communicate_message(&self, message: &str) -> Result<(), Box<dyn std::error::Error>> {
         let url = "https://httpbin.org/post"; // Simulated endpoint for P2P communication
         let payload = serde_json::json!({
@@ -108,7 +116,7 @@ impl AIAgent {
         println!("Response: {:?}", response.text().await?);
         Ok(())
     }}
-    
+#[allow(dead_code)]
 async fn ai() {
     // Create a new AI agent with a unique npub
     let agent = AIAgent::new();
@@ -133,6 +141,7 @@ async fn ai() {
                  
 // AI Agent with a unique DID and local storage
 #[derive(Debug)]
+#[allow(dead_code)]
 struct AIAgent2 {
     npub: String,
     local_storage: Arc<Mutex<HashMap<String, String>>>, // Simulated local storage
@@ -148,6 +157,7 @@ impl AIAgent {
     }
 
     // Store data securely in local storage
+    #[allow(dead_code)]
     fn store_data(&self, key: String, value: String) {
         let mut storage = self.local_storage.lock().unwrap();
         storage.insert(key.clone(), value.clone());
@@ -155,12 +165,14 @@ impl AIAgent {
     }
 
     // Retrieve data from local storage
+    #[allow(dead_code)]
     fn retrieve_data(&self, key: &str) -> Option<String> {
         let storage = self.local_storage.lock().unwrap();
         storage.get(key).cloned()
     }
 
     // Communicate with another AI agent over a simulated network (P2P)
+    #[allow(dead_code)]
     async fn communicate(&self, message: &str) -> Result<(), Box<dyn Error>> {
         let url = "https://httpbin.org/post"; // Simulated endpoint for P2P communication
         let payload = serde_json::json!({
@@ -188,6 +200,7 @@ async fn main() {
             // Asynchronous code goes here
         });
 }
+#[allow(dead_code)]
 async fn aiagent3() {
     // Create a new AI agent with a unique DID
     let agent = AIAgent::new();
