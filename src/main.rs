@@ -58,7 +58,7 @@ struct AIAgent {
 
 impl AIAgent {
     // Initialize a new AI agent with a unique npub
-    fn AIAgent () -> Self {
+    fn aiagent () -> Self {
         let npub = Self::generate_npub();
         Self {
             npub,
@@ -105,8 +105,8 @@ impl AIAgent {
         println!("Response: {:?}", response.text().await?);
         Ok(())
     }}
-#[tokio::main]
-async fn main() {
+    
+async fn ai() {
     // Create a new AI agent with a unique npub
     let agent = AIAgent::new();
     agent.display_npub();
@@ -114,16 +114,16 @@ async fn main() {
     // Store and retrieve data securely
     let data_key = "sample_data".to_string();
     let data_value = "This is a decentralized storage example.".to_string();
-    agent.store_data(data_key.clone(), data_value);
+    agent.store(data_key.clone(), data_value);
 
-    if let Some(value) = agent.retrieve_data(&data_key) {
+    if let Some(value) = agent.retrieve(&data_key) {
         println!("Retrieved Data: {}", value);
     } else {
         println!("Data not found.");
     }
 
     // Simulate communication with another AI agent
-    if let Err(e) = agent.communicate("Hello from Self-Sovereign AI!").await {
+    if let Err(e) = agent.communicate_message("Hello from Self-Sovereign AI!").await {
         eprintln!("Failed to communicate: {}", e);
     }
 }
@@ -138,8 +138,9 @@ struct AIAgent2 {
 impl AIAgent {
     fn new() -> Self {
         Self {
-            npub: generate_npub(),
+            npub: Self::generate_npub(),
             local_storage: Arc::new(Mutex::new(HashMap::new())),
+            did: DID::new(),
         }
     }
 
@@ -174,7 +175,17 @@ impl AIAgent {
 }
 
 #[tokio::main]
-async fn AIAgent3() {
+async fn main() {
+    // Your main function code here
+    tokio::runtime::Builder::new_current_thread()
+        .enable_all()
+        .build()
+        .unwrap()
+        .block_on(async {
+            // Asynchronous code goes here
+        });
+}
+async fn aiagent3() {
     // Create a new AI agent with a unique DID
     let agent = AIAgent::new();
     agent.did.display_did();
