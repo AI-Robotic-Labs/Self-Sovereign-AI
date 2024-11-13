@@ -58,7 +58,7 @@ struct AIAgent {
 
 impl AIAgent {
     // Initialize a new AI agent with a unique npub
-    fn create() -> Self {
+    fn AIAgent () -> Self {
         let npub = Self::generate_npub();
         Self {
             npub,
@@ -79,21 +79,21 @@ impl AIAgent {
     }
 
     // Store data securely in local storage
-    fn store_data_secure(&self, key: String, value: String) {
+    fn store (&self, key: String, value: String) {
         let mut storage = self.local_storage.lock().unwrap();
         storage.insert(key.clone(), value.clone());
         println!("Data stored successfully: ({}, {})", key, value);
     }
 
     // Retrieve data from local storage
-    fn retrieve_data(&self, key: &str) -> Option<String> {
+    fn retrieve(&self, key: &str) -> Option<String> {
         let storage = self.local_storage.lock().unwrap();
         storage.get(key).cloned()
     }
 
-    async fn communicate(&self, message: &str) -> Result<(), Box<dyn std::error::Error>> {
+    async fn communicate_message(&self, message: &str) -> Result<(), Box<dyn std::error::Error>> {
         let url = "https://httpbin.org/post"; // Simulated endpoint for P2P communication
-        let payload = json!({
+        let payload = serde_json::json!({
             "from": self.npub,
             "message": message,
         });
@@ -104,9 +104,7 @@ impl AIAgent {
         println!("Message sent: {}", message);
         println!("Response: {:?}", response.text().await?);
         Ok(())
-    }
-}
-
+    }}
 #[tokio::main]
 async fn main() {
     // Create a new AI agent with a unique npub
@@ -176,7 +174,7 @@ impl AIAgent {
 }
 
 #[tokio::main]
-async fn main() {
+async fn AIAgent3() {
     // Create a new AI agent with a unique DID
     let agent = AIAgent::new();
     agent.did.display_did();
