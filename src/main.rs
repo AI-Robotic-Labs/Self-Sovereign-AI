@@ -38,11 +38,12 @@ impl Nostr {
     } // Close the method here
 } // Close the `impl Nostr` block here
 
-    fn display_nostr(&self) {
-        println!("relay: {}", self.relay);
-        println!("Npub: {}", self.npub);
+    impl Nostr {
+        fn display_nostr(&self) {
+            println!("relay: {}", self.relay);
+            println!("Npub: {}", self.npub);
+        }
     }
-
 // Pubky structure
 struct Pkarr {
     public_key: String,
@@ -57,7 +58,7 @@ struct AIAgent {
 
 impl AIAgent {
     // Initialize a new AI agent with a unique npub
-    fn new() -> Self {
+    fn create() -> Self {
         let npub = Self::generate_npub();
         Self {
             npub,
@@ -78,7 +79,7 @@ impl AIAgent {
     }
 
     // Store data securely in local storage
-    fn store_data(&self, key: String, value: String) {
+    fn store_data_secure(&self, key: String, value: String) {
         let mut storage = self.local_storage.lock().unwrap();
         storage.insert(key.clone(), value.clone());
         println!("Data stored successfully: ({}, {})", key, value);
@@ -90,8 +91,7 @@ impl AIAgent {
         storage.get(key).cloned()
     }
 
-    // Communicate with another AI agent over a simulated network (P2P)
-    async fn communicate(&self, message: &str) -> Result<(), Box<dyn Error>> {
+    async fn communicate(&self, message: &str) -> Result<(), Box<dyn std::error::Error>> {
         let url = "https://httpbin.org/post"; // Simulated endpoint for P2P communication
         let payload = json!({
             "from": self.npub,
