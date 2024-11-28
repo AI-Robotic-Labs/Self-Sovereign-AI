@@ -12,7 +12,7 @@ The concept of Self-Sovereign AI proposes a framework for creating autonomous ar
 - [x] DID
 - [x] Pubky (WIP)
 - [x] DHT
-- [ ] SDK
+- [ ] SDK in Rust (2025)
 
 ## Warming ⚠️
 
