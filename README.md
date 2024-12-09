@@ -10,7 +10,7 @@ The concept of Self-Sovereign AI proposes a framework for creating autonomous ar
 - [x] Open source
 - [x] Nostr
 - [x] DID
-- [x] Pubky (WIP)
+- [x] Pubky
 - [x] DHT
 - [ ] [SDK in Rust (2025)](https://github.com/AI-Robotic-Labs/Self-Sovereign-AI-SDK)
 

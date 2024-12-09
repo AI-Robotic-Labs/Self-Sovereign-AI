@@ -4,6 +4,12 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use uuid::Uuid;
 use nostr::prelude::*;
+// Pkarr DNS structue
+#[derive(Debug, Serialize, Deserialize)]
+struct PkarrDns {
+    domain: String,
+    public_key: String,
+}
 // Decentralized Identity (DID) structure
 #[derive(Debug, Serialize, Deserialize)]
 struct DID {
