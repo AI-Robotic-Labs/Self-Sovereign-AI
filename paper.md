@@ -96,7 +96,7 @@ Self-Sovereign AI represents a transformative approach to artificial intelligenc
 
 | Feature/Aspect       | **Self-Sovereign AI**                 | **Gemini (Google)**              | **OpenAI**                       |
 |-----------------------|---------------------------------------|-----------------------------------|-----------------------------------|
-| **Architecture**      | Decentralized (e.g., DHT, blockchain) | Centralized within Google         | Centralized (closed models)       |
+| **Architecture**      | Decentralized (DHT) | Centralized within Google         | Centralized (closed models)       |
 | **Ownership**         | User- or community-owned             | Google-controlled                | OpenAI-controlled                |
 | **Focus**             | Decentralization, privacy, AI autonomy | Enterprise, search, multimodal AI | General-purpose generative AI    |
 | **Interoperability**  | High (across platforms and agents)    | Limited to Google products        | APIs offer interoperability       |
@@ -104,6 +104,6 @@ Self-Sovereign AI represents a transformative approach to artificial intelligenc
 | **Cost**              | Potentially lower for users (P2P infra) | Integrated costs for enterprises | Subscription/API fees             |
 | **Scalability**       | Dynamic scaling via P2P contributions | Google’s massive cloud infra      | Microsoft-backed Azure infra      |
 | **Data Privacy**      | Full user control                    | Reliant on Google's terms         | Proprietary with unclear guarantees|
-| **Innovation Speed**  | Community-driven                     | High (DeepMind innovations)       | High (fast LLM iteration)         |
+| **Innovation Speed**  | High Community-driven, interoperability (LLM, Ai Agents...)| High (DeepMind innovations)       | High (fast LLM iteration)         |
 
 ---
