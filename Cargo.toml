@@ -9,7 +9,7 @@ serde_json = "1.0.140"
 uuid = { version = "1.16.0", features = ["v4"] }
 reqwest = { version = "0.12.15", features = ["json"] }
 nostr = "0.40.0"
-pkarr = "3.7.0"
+pkarr = "3.7.1"
 tokio =  { version = "1.44.2", features = ["full"] }
 rustls = "0.23.26"
 openssl = "0.10.72"
