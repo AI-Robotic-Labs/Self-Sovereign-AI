@@ -11,6 +11,6 @@ reqwest = { version = "0.12.20", features = ["json"] }
 nostr = "0.42.0"
 pkarr = "3.7.2"
 tokio =  { version = "1.45.1", features = ["full"] }
-rustls = "0.23.27"
+rustls = "0.23.28"
 openssl = "0.10.72"
 ring = "0.17.14"
