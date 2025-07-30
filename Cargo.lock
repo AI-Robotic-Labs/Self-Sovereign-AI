@@ -1180,7 +1180,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4979f22fdb869068da03c9f7528f8297c6fd2606bc3a4affe42e6a823fdb8da4"
 dependencies = [
  "cfg-if",
- "windows-targets 0.52.6",
+ "windows-targets 0.48.5",
 ]
 
 [[package]]
@@ -1335,9 +1335,9 @@ dependencies = [
 
 [[package]]
 name = "nostr"
-version = "0.43.0"
+version = "0.42.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f30e6dcb36d88017587b0b5578d1ed3398afe8e4f45fdb910e48b8675aaf6f68"
+checksum = "d193102a62a22b61f9a61b9df54fb19ebab8c1763d088fbb9a6f0f57000fba2d"
 dependencies = [
  "base64",
  "bech32",
@@ -1348,6 +1348,7 @@ dependencies = [
  "chacha20poly1305",
  "getrandom 0.2.15",
  "instant",
+ "regex",
  "scrypt",
  "secp256k1",
  "serde",
@@ -1857,9 +1858,9 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.23.30"
+version = "0.23.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "069a8df149a16b1a12dcc31497c3396a173844be3cac4bd40c9e7671fef96671"
+checksum = "c0ebcbd2f03de0fc1122ad9bb24b127a5a6cd51d72604a3f3c50ac459762b6cc"
 dependencies = [
  "aws-lc-rs",
  "log",
