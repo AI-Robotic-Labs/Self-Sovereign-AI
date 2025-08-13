@@ -21,8 +21,8 @@ impl DID {
     #[allow(dead_code)]
     fn new() -> Self {
         Self {
-            id: format!("did:example:{}", Uuid::new_v4()),
-            public_key: Uuid::new_v4().to_string(),
+            id: format!("did:example:{}", Uuid::max()),
+            public_key: Uuid::max().to_string(),
         }
     }
 
