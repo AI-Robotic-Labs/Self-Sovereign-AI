@@ -6,6 +6,7 @@ use uuid::Uuid;
 use nostr::prelude::*;
 // Pkarr DNS structue
 #[derive(Debug, Serialize, Deserialize)]
+#[allow(dead_code)]
 struct PkarrDns {
     domain: String,
     public_key: String,
